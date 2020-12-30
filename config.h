@@ -6,6 +6,13 @@
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
 static char *font = "FantasqueSansMono:pixelsize=17:antialias=true:autohint=true";
+
+/* Spare fonts */
+static char *font2[] = {
+	"FiraCode:pixelsize=15:antialias=true:autohint=true",
+	"JoyPixels:pixelsize=12:antialias=true:autohint=true",
+};
+
 static int borderpx = 2;
 
 /*
