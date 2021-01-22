@@ -6,11 +6,10 @@
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
 static char *font = "FantasqueSansMono:pixelsize=17:antialias=true:autohint=true";
-
 /* Spare fonts */
 static char *font2[] = {
-	"FiraCode:pixelsize=15:antialias=true:autohint=true",
 	"JoyPixels:pixelsize=12:antialias=true:autohint=true",
+	"Hack Nerd Font Mono:pixelsize=11:antialias=true:autohint=true",
 };
 
 static int borderpx = 2;
@@ -101,7 +100,6 @@ char *termname = "st-256color";
 unsigned int tabspaces = 8;
 
 /* Terminal colors (16 first used in escape sequence) */
-
 static const char *colorname[] = {
   /* 8 normal colors */
   [0] = "#1d2021", /* hard contrast: #1d2021 medium contrast: #282828 soft contrast: #32302f */
@@ -196,8 +194,7 @@ static Shortcut shortcuts[] = {
 	{ TERMMOD,              XK_J,        	zoom,           {.f = -1} },
 	{ TERMMOD,              XK_U,       	zoom,           {.f = +2} },
 	{ TERMMOD,              XK_D,        	zoom,           {.f = -2} },
-	{ TERMMOD,              XK_Next,        zoom,           {.f = -1} },
-	{ TERMMOD,              XK_Home,        zoomreset,      {.f =  0} },
+	{ TERMMOD,              XK_Home,       	zoomreset,      {.f =  0} },
 	{ MODKEY,               XK_c,           clipcopy,       {.i =  0} },
 	{ MODKEY,               XK_v,           clippaste,      {.i =  0} },
 	{ MODKEY,               XK_y,           selpaste,       {.i =  0} },
